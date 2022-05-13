@@ -1,4 +1,11 @@
 {
+  "version": "0.0.0",
   "name": "lerna-yarn-rollup-boilerplate",
-  "packageManager": "yarn@3.2.1"
+  "workspaces": [
+    "packages/*"
+  ],
+  "packageManager": "yarn@3.2.1",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
 }
