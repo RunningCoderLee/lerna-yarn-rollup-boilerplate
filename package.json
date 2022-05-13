@@ -1,7 +1,4 @@
 {
-  "name": "root",
-  "private": true,
-  "devDependencies": {
-    "lerna": "^4.0.0"
-  }
+  "name": "lerna-yarn-rollup-boilerplate",
+  "packageManager": "yarn@3.2.1"
 }
