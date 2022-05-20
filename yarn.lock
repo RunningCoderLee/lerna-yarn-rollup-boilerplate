@@ -1382,6 +1382,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@lyrb/ui-button@workspace:packages/ui-button":
+  version: 0.0.0-use.local
+  resolution: "@lyrb/ui-button@workspace:packages/ui-button"
+  dependencies:
+    react: ^18.0.0
+  peerDependencies:
+    react: ^18.0.0
+  languageName: unknown
+  linkType: soft
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
