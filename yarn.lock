@@ -1392,6 +1392,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@lyrb/ui-utils@workspace:packages/ui-utils":
+  version: 0.0.0-use.local
+  resolution: "@lyrb/ui-utils@workspace:packages/ui-utils"
+  languageName: unknown
+  linkType: soft
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
