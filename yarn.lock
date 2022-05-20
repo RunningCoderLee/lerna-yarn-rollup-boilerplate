@@ -1387,6 +1387,7 @@ __metadata:
   resolution: "@lyrb/ui-button@workspace:packages/ui-button"
   dependencies:
     react: ^18.0.0
+    typescript: ^4.6.4
   peerDependencies:
     react: ^18.0.0
   languageName: unknown
@@ -1395,6 +1396,8 @@ __metadata:
 "@lyrb/ui-utils@workspace:packages/ui-utils":
   version: 0.0.0-use.local
   resolution: "@lyrb/ui-utils@workspace:packages/ui-utils"
+  dependencies:
+    typescript: ^4.6.4
   languageName: unknown
   linkType: soft
 
@@ -4415,6 +4418,7 @@ __metadata:
     "@commitlint/config-conventional": ^17.0.0
     husky: ^8.0.1
     lerna: ^4.0.0
+    typescript: ^4.6.4
   languageName: unknown
   linkType: soft
 
