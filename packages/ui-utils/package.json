@@ -17,7 +17,8 @@
     "registry": "http://nexus.medlinker.com/repository/group-npm/"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "eslint": "yarn g:eslint src/**/*"
   },
   "devDependencies": {
     "typescript": "^4.6.4"
