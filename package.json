@@ -10,7 +10,8 @@
     "postinstall": "husky install",
     "g:eslint": "cd $INIT_CWD && eslint",
     "prettier": "prettier --write .",
-    "g:stylelint": "cd $INIT_CWD && stylelint"
+    "g:stylelint": "cd $INIT_CWD && stylelint",
+    "lint-staged": "lint-staged"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.0",
@@ -27,6 +28,7 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "husky": "^8.0.1",
     "lerna": "^4.0.0",
+    "lint-staged": "^12.4.1",
     "prettier": "^2.6.2",
     "stylelint": "^14.8.2",
     "stylelint-config-prettier": "^9.0.3",
@@ -39,5 +41,10 @@
     "push": false,
     "emoji": "code",
     "verify": true
+  },
+  "lint-staged": {
+    "./packages/**/*.{js,jsx,ts,tsx}": "eslint --fix",
+    "./packages/**/*.css": "stylelint --fix",
+    "*.{md,json}": "prettier --write"
   }
 }
