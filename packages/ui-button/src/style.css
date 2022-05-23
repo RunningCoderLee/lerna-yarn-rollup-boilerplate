@@ -1,0 +1,9 @@
+.btn-primary {
+  background: blue;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: 1px solid grey;
+  appearance: none;
+}

@@ -42,5 +42,6 @@ module.exports = {
     ],
     'react/function-component-definition': 0,
     'react/destructuring-assignment': 0,
+    'import/no-extraneous-dependencies': 0,
   },
 }

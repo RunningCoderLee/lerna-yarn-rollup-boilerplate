@@ -1,4 +1,6 @@
 import type { PropsWithChildren } from 'react'
+import clsx from 'clsx'
+import './style.css'
 
 interface Props {
   type: 'primary' | 'default'
@@ -7,7 +9,15 @@ interface Props {
 const Button = (props: PropsWithChildren<Props>) => {
   const { type } = props
 
-  return <button type="button">{props.children}</button>
+  const classNames = clsx('btn', {
+    'btn-primary': type === 'primary',
+  })
+
+  return (
+    <button className={classNames} type="button">
+      {props.children}
+    </button>
+  )
 }
 
 export default Button

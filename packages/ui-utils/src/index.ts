@@ -1,3 +1,3 @@
 export const sayHelloTo = (name: string) => {
-  console.log(`hello ${name}`)
+  console.log(`Hello ${name}`)
 }
