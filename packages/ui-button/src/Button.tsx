@@ -1,9 +1,13 @@
 import type { PropsWithChildren } from 'react'
 
-interface Props {}
+interface Props {
+  type: 'primary' | 'default'
+}
 
 const Button = (props: PropsWithChildren<Props>) => {
-  return <button>{props.children}</button>
+  const { type } = props
+
+  return <button type="button">{props.children}</button>
 }
 
 export default Button
