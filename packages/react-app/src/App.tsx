@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { Button } from '@lyrb/ui-button'
+import '@lyrb/ui-button/lib/index.css'
 import logo from './logo.svg'
 import './App.css'
 
@@ -14,6 +16,9 @@ function App() {
           <button type="button" onClick={() => setCount((prevCount) => prevCount + 1)}>
             count is: {count}
           </button>
+        </p>
+        <p>
+          <Button type="primary">Click Me</Button>
         </p>
         <p>
           Edit <code>App.tsx</code> and save to test HMR updates.

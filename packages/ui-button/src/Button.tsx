@@ -1,5 +1,6 @@
-import type { PropsWithChildren } from 'react'
+import { PropsWithChildren, useCallback } from 'react'
 import clsx from 'clsx'
+import { sayHelloTo } from '@lyrb/ui-utils'
 import './style.css'
 
 interface Props {
@@ -13,8 +14,12 @@ const Button = (props: PropsWithChildren<Props>) => {
     'btn-primary': type === 'primary',
   })
 
+  const handleClick = useCallback(() => {
+    sayHelloTo('John')
+  }, [])
+
   return (
-    <button className={classNames} type="button">
+    <button className={classNames} type="button" onClick={handleClick}>
       {props.children}
     </button>
   )

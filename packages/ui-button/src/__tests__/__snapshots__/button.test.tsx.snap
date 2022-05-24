@@ -3,6 +3,7 @@
 exports[`test button component render correctly 1`] = `
 <button
   className="btn btn-primary"
+  onClick={[Function]}
   type="button"
 >
   123
