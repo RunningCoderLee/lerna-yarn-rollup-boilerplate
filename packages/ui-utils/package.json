@@ -5,20 +5,24 @@
   "author": "RunningCoderLee <lixin01@medlinker.com>",
   "homepage": "",
   "license": "ISC",
-  "main": "lib/ui-utils.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "typings": "lib/index.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "lib",
+    "es"
   ],
   "publishConfig": {
     "registry": "http://nexus.medlinker.com/repository/group-npm/"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "eslint": "yarn g:eslint src/**/*"
+    "eslint": "yarn g:eslint src/**/*",
+    "build": "yarn g:clean && yarn g:build -c"
   },
   "devDependencies": {
     "typescript": "^4.6.4"

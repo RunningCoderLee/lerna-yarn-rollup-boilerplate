@@ -1,6 +1,10 @@
 {
   "extends": "../../tsconfig.json",
+  "exclude": ["node_modules", "**/*.test.ts", "/**/*.test.tsx", "./es/**/*", "./lib/**/*"],
   "compilerOptions": {
-    "jsx": "preserve"
+    "jsx": "react-jsx",
+    "declaration": true,
+    "noEmit": true,
+    "outDir": "./"
   }
 }

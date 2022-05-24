@@ -5,7 +5,9 @@
   "author": "RunningCoderLee <lixin01@medlinker.com>",
   "homepage": "",
   "license": "ISC",
-  "main": "lib/ui-button.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "typings": "lib/index.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -17,7 +19,9 @@
     "registry": "http://nexus.medlinker.com/repository/group-npm/"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "yarn clean && yarn g:build -c",
+    "clean": "rm -rf es lib"
   },
   "peerDependencies": {
     "react": "^18.0.0"

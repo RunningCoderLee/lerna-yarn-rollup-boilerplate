@@ -1,3 +1,9 @@
 {
-  "extends": "../../tsconfig.json"
+  "extends": "../../tsconfig.json",
+  "exclude": ["node_modules", "**/*.test.ts", "/**/*.test.tsx", "./es/**/*", "./lib/**/*"],
+  "compilerOptions": {
+    "declaration": true,
+    "noEmit": true,
+    "outDir": "./"
+  }
 }
