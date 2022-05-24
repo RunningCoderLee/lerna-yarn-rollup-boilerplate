@@ -2,7 +2,7 @@
   "name": "@lyrb/ui-utils",
   "version": "1.0.0",
   "description": "> TODO: description",
-  "author": "RunningCoderLee <lixin01@medlinker.com>",
+  "author": "RunningCoderLee <sprint_l@outlook.com>",
   "homepage": "",
   "license": "ISC",
   "main": "lib/index.js",
@@ -17,7 +17,8 @@
     "es"
   ],
   "publishConfig": {
-    "registry": "http://nexus.medlinker.com/repository/group-npm/"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
