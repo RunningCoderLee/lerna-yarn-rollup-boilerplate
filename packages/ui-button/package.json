@@ -33,7 +33,7 @@
     "typescript": "^4.6.4"
   },
   "dependencies": {
-    "@lyrb/ui-utils": "1.0.0",
+    "@lyrb/ui-utils": "^1.0.0",
     "clsx": "^1.1.1"
   }
 }
