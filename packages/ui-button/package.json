@@ -20,6 +20,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
+    "prepublishOnly": "yarn run build",
     "test": "echo \"Error: run tests from root\" && exit 1",
     "build": "yarn clean && yarn g:build -c",
     "clean": "rm -rf es lib"

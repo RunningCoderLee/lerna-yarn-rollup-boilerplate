@@ -21,6 +21,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
+    "prepublishOnly": "yarn run build",
     "test": "echo \"Error: run tests from root\" && exit 1",
     "eslint": "yarn g:eslint src/**/*",
     "build": "yarn g:clean && yarn g:build -c"
